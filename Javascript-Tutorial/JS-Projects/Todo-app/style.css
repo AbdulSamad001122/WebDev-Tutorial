@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Full screen dark background */
+body {
+  background-color: #0d0d0d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* To-Do Box */
+.todo-box {
+  background-color: #1e1e1e;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Title */
+.todo-box h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Input section */
+.input-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Input */
+.input-container input {
+  padding: 10px;
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+/* Placeholder */
+.input-container input::placeholder {
+  color: #aaa;
+}
+
+/* Button */
+.input-container button {
+  background-color: #a020f0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #8b1be0;
+}
+
+/* Error Line */
+#error_line {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Todos container with flex layout */
+#todos-container {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Todo list styled with gap */
+#todo_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+/* Each list item */
+li[data-id] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c2c;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  gap: 20px;
+}
+
+/* Todo text */
+li[data-id] span {
+  flex: 1;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+/* Delete button */
+li[data-id] button {
+  background-color: #ff3b3b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+li[data-id] button:hover {
+  background-color: #e03131;
+}
+
+
+li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+  opacity: 0.7;
+}

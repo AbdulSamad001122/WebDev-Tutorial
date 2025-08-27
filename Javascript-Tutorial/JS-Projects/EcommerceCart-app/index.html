@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple E-commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="main-container">
+    <h1 id="main-title">🛍️ Night Market</h1>
+
+    <section id="product-section">
+      <h2 id="product-title">Available Products</h2>
+      <div id="product-list">
+        <div class="product-card">
+          <h3 class="product-name">Nebula Lamp</h3>
+          <p class="product-price">$24.99</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <h3 class="product-name">Phantom Earbuds</h3>
+          <p class="product-price">$39.50</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <h3 class="product-name">Shadow Keyboard</h3>
+          <p class="product-price">$74.10</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <h3 class="product-name">Darklite Watch</h3>
+          <p class="product-price">$59.90</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <h3 class="product-name">Emerald Charger</h3>
+          <p class="product-price">$15.75</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart-section">
+      <h2 id="cart-title">Your Cart</h2>
+      <div id="cart-items">
+        <p id="empty-cart">Your cart is empty.</p>
+        <ul id="cart-list" class="hidden"></ul>
+      </div>
+      <div id="cart-total" class="hidden">
+        <p>Total: <span id="total-price"></span></p>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </section>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

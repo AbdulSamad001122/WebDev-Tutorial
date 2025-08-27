@@ -1,0 +1,131 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  background-color: #ffffffee;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e3c72;
+}
+
+/* Input container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+#city-input:focus {
+  border-color: #1e3c72;
+  outline: none;
+}
+
+/* Button */
+#get-weather-btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #1e3c72;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#get-weather-btn:hover {
+  background-color: #305ba5;
+}
+
+/* Weather Info */
+#weather-info {
+  margin-top: 20px;
+}
+
+#city-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#temperature {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #227aff; /* Warm color for temperature */
+    text-align: center;
+    margin: 10px 0;
+}
+
+#description {
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Error Message */
+#error-message {
+  color: red;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #get-weather-btn,
+  #city-input {
+    font-size: 0.95rem;
+  }
+}
+
+
